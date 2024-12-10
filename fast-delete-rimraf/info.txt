@@ -1,0 +1,8 @@
+HOW TO INSTALL
+-----------------------------------------
+1- install rimraf 
+   npm install rimraf -g
+
+2- copy delete.bat to c:\windows\system32\
+
+3- execute fast-delete.reg file.

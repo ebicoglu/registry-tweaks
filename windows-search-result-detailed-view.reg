@@ -1,0 +1,23 @@
+Windows Registry Editor Version 5.00
+
+;Fixes search results defaults to Content view.
+;Sets Details view as default search results view for Generic folders.
+
+[-HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\BagMRU]
+
+[-HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags]
+
+;Generic Search Results
+[HKEY_CURRENT_USER\SOFTWARE\Classes\Local Settings\Software\Microsoft\Windows\Shell\Bags\AllFolders\Shell\{7fde1a1e-8b31-49a5-93b8-6be14cfa4943}]
+"LogicalViewMode"=dword:00000001
+"Mode"=dword:00000004
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{7fde1a1e-8b31-49a5-93b8-6be14cfa4943}\TopViews]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{7fde1a1e-8b31-49a5-93b8-6be14cfa4943}\TopViews\{4804caf0-de08-42ec-b811-52350e94c01e}]
+"ColumnList"="prop:0System.ItemNameDisplay;0System.DateModified;0System.ItemTypeText;0System.Size;0System.ItemPathDisplay;1System.Search.Rank;1System.DateCreated;1System.Author;1System.Keywords;1System.Title"
+"LogicalViewMode"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FolderTypes\{7fde1a1e-8b31-49a5-93b8-6be14cfa4943}\TopViews\{bdbe736f-34f5-4829-abe8-b550e65146c4}]
+"ColumnList"="prop:0System.ItemNameDisplay;0System.DateModified;0System.ItemTypeText;0System.Size;0System.ItemPathDisplay;1System.Search.Rank;1System.DateCreated;1System.Author;1System.Keywords;1System.Title"
+"LogicalViewMode"=dword:00000001
